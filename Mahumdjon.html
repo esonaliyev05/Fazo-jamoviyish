@@ -1,11 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MIXEL.UZ - Оформить покупку</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Mahmudjon.css">
 </head>
 <body>
-    
+
+    <header class="header">
+        <div class="top-header">
+            <div class="logo">
+                <div class="logo-icon-box">M</div>
+                <div class="logo-text">MIXEL<span>.UZ</span></div>
+            </div>
+
+            <div class="search-box">
+                <select class="category-select">
+                    <option>Все категории</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Телефоны и бытовая техника...">
+                <i class="fa-solid fa-microphone mic-icon"></i>
+                <button class="search-btn">Поиск</button>
+            </div>
+
+            <div class="user-menu">
+                <div class="menu-item">
+                    <i class="fa-regular fa-user menu-icon"></i>
+                    <span>Войти</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-scale-balanced menu-icon"></i>
+                    <span>Сравнение</span>
+                    <span class="badge">11</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-regular fa-heart menu-icon"></i>
+                    <span>Избранное</span>
+                    <span class="badge">47</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fa-solid fa-cart-shopping menu-icon"></i>
+                    <span>Корзина</span>
+                    <span class="badge">4</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <button class="catalog-btn">
+                <i class="fa-solid fa-bars"></i>
+                Категории
+            </button>
+            <ul class="nav-list">
+                <li><a href="#">Наши магазины</a></li>
+                <li><a href="#">Моноблоки</a></li>
+                <li><a href="#">Телефоны, планшеты</a></li>
+                <li><a href="#">Ноутбуки</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Сетевое оборудование</a></li>
+                <li><a href="#">Оргтехника</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="breadcrumbs">
+            <span>Главная</span> > <span>Оформить покупку</span>
+        </div>
+        <h1 class="page-title">Оформить покупку</h1>
+
+        <div class="checkout-layout">
+            <div class="checkout-left">
+
+                <section class="section1">
+                    <div class="section-title">
+                        <span class="step-number">1</span>
+                        <h3>Ваши данные</h3>
+                    </div>
+                    <div class="section-body">
+                        <div class="form-row">
+                            <div class="form-group phone-group">
+                                <label>Телефон*</label>
+                                <input type="text" value="(+998) 99 123 45 67">
+                            </div>
+                        </div>
+                        <div class="form-row form-grid">
+                            <div class="form-group">
+                                <label>Имя*</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Фамилия*</label>
+                                <input type="text" value="Tojinazarov">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section2">
+                    <div class="section-title flex-between">
+                        <div class="title-left">
+                            <span class="step-number">2</span>
+                            <h3>Ваш заказ</h3>
+                        </div>
+                        <button class="btn-change">Изменить</button>
+                    </div>
+                    <div class="section-body">
+                        <div class="cart-item">
+                            <div class="item-img">
+                                <img src="image 5.png" alt="Galaxy A03 Core 2/32Gb Black">
+                            </div>
+                            <div class="item-name">Galaxy A03 Core 2/32Gb Black</div>
+                            <div class="item-qty">1 шт</div>
+                            <div class="item-price">1 334 000 сум</div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="item-img">
+                                <img src="image 5.png" alt="Galaxy A03 Core 2/32Gb Black">
+                            </div>
+                            <div class="item-name">Galaxy A03 Core 2/32Gb Black</div>
+                            <div class="item-qty">1 шт</div>
+                            <div class="item-price">1 334 000 сум</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section3">
+                    <div class="section-title">
+                        <span class="step-number">3</span>
+                        <h3>Выберите способ оплаты</h3>
+                    </div>
+                    <div class="section-body">
+                        <div class="payment-option selected">
+                            <input type="radio" name="payment_method" checked>
+                            <label>Оплата через Payme</label>
+                            <div class="payment-icon">
+                                <span class="payme-text">payme</span>
+                            </div>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" name="payment_method">
+                            <label>Онлайн оплата по карте UZCARD и HUMO</label>
+                            <div class="payment-icon">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </div>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" name="payment_method">
+                            <label>Наличными при получении</label>
+                            <div class="payment-icon">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                            </div>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" name="payment_method">
+                            <label>Картой при получении</label>
+                            <div class="payment-icon">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" name="payment_method">
+                            <label>Рассрочка</label>
+                            <div class="payment-icon">
+                                <i class="fa-solid fa-percent"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section4">
+                    <div class="section-title">
+                        <span class="step-number">4</span>
+                        <h3>Способ получения</h3>
+                    </div>
+                    <div class="section-body">
+                        <p class="field-title">Ваш город</p>
+                        <div class="delivery-city">
+                            <input type="radio" name="city_choice" checked>
+                            <div class="city-info">
+                                <strong>Ташкент</strong>
+                                <span>Доставка Fazo</span>
+                            </div>
+                        </div>
+
+                        <p class="field-title">Укажите адрес доставки</p>
+                        <div class="form-row form-grid">
+                            <div class="form-group">
+                                <label>Регион / Область*</label>
+                                <select>
+                                    <option>Выберите регион</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Город / Район*</label>
+                                <select>
+                                    <option>Выберите район</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row form-grid-address">
+                            <div class="form-group address-group">
+                                <label>Адрес</label>
+                                <input type="text" value="O'zbekiston, Farg'ona, Sayilgoh ko'chasi, 13/2">
+                            </div>
+                            <div class="form-group floor-group">
+                                <label>Этаж</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Дата доставки</label>
+                                <div class="date-box">
+                                    <input type="date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="checkout-right">
+                <div class="summary-box">
+                    <h3 class="summary-title">Ваши данные</h3>
+                    <div class="summary-row">
+                        <span>4 товара на сумму</span>
+                        <span class="summary-val">5 262 000 сум</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Доставка</span>
+                        <span class="summary-val green-text">Бесплатно</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total-row">
+                        <span>Всего к оплате</span>
+                        <span class="total-val">5 262 000 сум</span>
+                    </div>
+                    <button class="btn-checkout">Оформить покупку</button>
+                    <p class="agreement-text">
+                        Подтверждая заказ, я принимаю условия <a href="#">Пользовательского соглашения</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <div class="logo-icon-box">M</div>
+                    <h2>MIXEL<span>.UZ</span></h2>
+                </div>
+                <div class="work-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        График работы колл-центра:<br>
+                        Понедельник - Суббота: 9:00-18:00
+                    </div>
+                </div>
+                <div class="phone-block">
+                    <i class="fa-solid fa-phone phone-icon"></i>
+                    <div>
+                        <span>Колл-центр:</span>
+                        <strong>+998 (71) 205-93-93</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Категории</h4>
+                <ul>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Игровые кресла</a></li>
+                    <li><a href="#">Телефоны</a></li>
+                    <li><a href="#">Моноблоки</a></li>
+                    <li><a href="#">Модули памяти</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Общее</h4>
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Наши магазины</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Правила программы лояльности</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Покупателям</h4>
+                <ul>
+                    <li><a href="#">Покупка в рассрочку</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Правила покупок с cashback</a></li>
+                    <li><a href="#">Возврат / Обмен</a></li>
+                    <li><a href="#">Правила пользования купонами</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
