@@ -1,11 +1,641 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MIXELL.UZ - Интернет-магазин в Ташкенте</title>
+    <link rel="stylesheet" href="Avazbek.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Avazbek keldiiiii</h1>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container top-bar-flex">
+                <div class="top-left">
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Ташкент</a>
+                    <a href="#">Наши магазины</a>
+                    <a href="#">B2B-продажи</a>
+                    <a href="#">Оплата и доставка</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="top-right">
+                    <a href="tel:+998712030099" class="phone-link"><i class="fa-solid fa-phone"></i> +998 71 203 00 99</a>
+                    <a href="#" class="lang-btn">Рус <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container main-header-flex">
+                <div class="logo-area">
+                    <a href="#" class="logo">MIXELL<span>.UZ</span></a>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Телефон, в бытовой технике...">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"><span>Найти</span></i></button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="action-item">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Войти</span>
+                    </a>
+                    <a href="#" class="action-item">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>Сравнить</span>
+                    </a>
+                    <a href="#" class="action-item">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Избранное</span>
+                    </a>
+                    <a href="#" class="action-item cart-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Корзина</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <div class="container nav-flex">
+                <button class="catalog-btn"><i class="fa-solid fa-bars"></i> Каталог</button>
+                <ul class="nav-links">
+                    <li><a href="#">Мобильные телефоны</a></li>
+                    <li><a href="#">Смартфоны</a></li>
+                    <li><a href="#">Телефоны, планшеты</a></li>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Комплектующие</a></li>
+                    <li><a href="#">Бытовая техника</a></li>
+                    <li><a href="#">Освещение</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#">Главная</a> <i class="fa-solid fa-chevron-right"></i> <a href="#">Смартфоны, планшеты</a> <i class="fa-solid fa-chevron-right"></i> <span>Телефон 14 / 246</span>
+            </div>
+            
+            <h1 class="page-title">Смартфоны в Ташкенте</h1>
+
+            <div class="catalog-layout">
+                <aside class="sidebar">
+                    <div class="filter-group">
+                        <div class="filter-header">Цена (сум) <i class="fa-solid fa-chevron-up"></i></div>
+                        <div class="price-inputs">
+                            <input type="text" value="398 550">
+                            <span>-</span>
+                            <input type="text" value="105 100 000">
+                        </div>
+                        <div class="range-slider">
+                            <div class="range-track"></div>
+                            <div class="range-thumb left"></div>
+                            <div class="range-thumb right"></div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-header">Наличие <i class="fa-solid fa-chevron-up"></i></div>
+                        <label class="checkbox-label"><input type="checkbox"> Все (246)</label>
+                        <label class="checkbox-label"><input type="checkbox" checked> В наличии (245)</label>
+                        <label class="checkbox-label"><input type="checkbox"> На заказ (2)</label>
+                        <label class="checkbox-label"><input type="checkbox"> Архив (69)</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-header">Фильтр по аккумулятору <i class="fa-solid fa-chevron-up"></i></div>
+                        <label class="checkbox-label"><input type="checkbox"> 1500 мАч</label>
+                        <label class="checkbox-label"><input type="checkbox"> 3000 мАч</label>
+                        <label class="checkbox-label"><input type="checkbox"> 4000 мАч</label>
+                        <label class="checkbox-label"><input type="checkbox"> 5000 мАч</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-header">Страна производитель <i class="fa-solid fa-chevron-up"></i></div>
+                        <label class="checkbox-label"><input type="checkbox"> Вьетнам</label>
+                        <label class="checkbox-label"><input type="checkbox"> Китай</label>
+                        <label class="checkbox-label"><input type="checkbox"> Индия</label>
+                        <label class="checkbox-label"><input type="checkbox"> Корея</label>
+                    </div>
+
+                    <div class="filter-accordion">
+                        <div class="accordion-item">Количество сим-карт <i class="fa-solid fa-chevron-right"></i></div>
+                        <div class="accordion-item">Фронтальная камера <i class="fa-solid fa-chevron-right"></i></div>
+                        <div class="accordion-item">Фотокамера <i class="fa-solid fa-chevron-right"></i></div>
+                        <div class="accordion-item">Версия ОС <i class="fa-solid fa-chevron-right"></i></div>
+                        <div class="accordion-item">Разъем для наушников <i class="fa-solid fa-chevron-right"></i></div>
+                        <div class="accordion-item">Разъем для наушников <i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <button class="reset-filter-btn">Применить</button>
+                </aside>
+
+                <section class="product-section">
+                    <div class="product-toolbar">
+                        <div class="toolbar-left">
+                            <button class="view-btn active"><i class="fa-solid fa-grip"></i></button>
+                            <button class="view-btn"><i class="fa-solid fa-list"></i></button>
+                        </div>
+                        <div class="toolbar-right">
+                            <select class="sort-select">
+                                <option>По умолчанию</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Product Item 1 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300" alt="Camera">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">14 008 000 сум/мес</span>
+                                <span class="old-price">124 456 сум</span>
+                            </div>
+                            <h3 class="product-name">PTZ камера Tentec TEVO-NV4K Ultra HD</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 2 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300" alt="Mac">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">15 600 000 сум/мес</span>
+                                <span class="old-price">17 100 300 сум</span>
+                            </div>
+                            <h3 class="product-name">iMac 26' i7 processor/ 8Gb SSD 256Gb</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 3 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300" alt="Laptop">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">13 487 000 сум/мес</span>
+                                <span class="old-price">13 853 500 сум</span>
+                            </div>
+                            <h3 class="product-name">Ноутбук ASUS ZenBook UX434F i7-10510U</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 4 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300" alt="Tablet">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">2 087 000 сум/мес</span>
+                                <span class="old-price">2 251 300 сум</span>
+                            </div>
+                            <h3 class="product-name">Планшет BD 10.4L Exlion-Pro 5/32GB Black 10.3"</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 5 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300" alt="Phone">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">1 529 000 сум/мес</span>
+                                <span class="old-price">2 150 900 сум</span>
+                            </div>
+                            <h3 class="product-name">Телефон TECNO Spark 6 Go KE5 2/64Gb Ice Jadeite</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 6 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Phone 2">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">16 000 000 сум/мес</span>
+                                <span class="old-price">569 900 сум</span>
+                            </div>
+                            <h3 class="product-name">Телефон TECNO POP 4 BC2s 2/32GB Ocean Blue</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 7 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=300" alt="Server">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">18 000 000 сум/мес</span>
+                                <span class="old-price">523 500 сум</span>
+                            </div>
+                            <h3 class="product-name">Румсет часы Hayward HT-LS003</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 8 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Cam">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">524 800 сум/мес</span>
+                                <span class="old-price">793 000 сум</span>
+                            </div>
+                            <h3 class="product-name">PTZ камера Tentec TEVO-NV4K Ultra HD</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 9 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300" alt="Camera">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">14 008 000 сум/мес</span>
+                                <span class="old-price">124 456 сум</span>
+                            </div>
+                            <h3 class="product-name">PTZ камера Tentec TEVO-NV4K Ultra HD</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 10 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300" alt="Mac">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">15 600 000 сум/мес</span>
+                                <span class="old-price">17 100 300 сум</span>
+                            </div>
+                            <h3 class="product-name">iMac 26' i7 processor/ 8Gb SSD 256Gb</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 11 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300" alt="Laptop">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">13 487 000 сум/мес</span>
+                                <span class="old-price">13 853 500 сум</span>
+                            </div>
+                            <h3 class="product-name">Ноутбук ASUS ZenBook UX434F i7-10510U</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 12 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300" alt="Tablet">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">2 087 000 сум/мес</span>
+                                <span class="old-price">2 251 300 сум</span>
+                            </div>
+                            <h3 class="product-name">Планшет BD 10.4L Exlion-Pro 5/32GB Black 10.3"</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 13 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300" alt="Phone">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">1 529 000 сум/мес</span>
+                                <span class="old-price">2 150 900 сум</span>
+                            </div>
+                            <h3 class="product-name">Телефон TECNO Spark 6 Go KE5 2/64Gb Ice Jadeite</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 14 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Phone 2">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">16 000 000 сум/мес</span>
+                                <span class="old-price">569 900 сум</span>
+                            </div>
+                            <h3 class="product-name">Телефон TECNO POP 4 BC2s 2/32GB Ocean Blue</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 15 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=300" alt="Server">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">18 000 000 сум/мес</span>
+                                <span class="old-price">523 500 сум</span>
+                            </div>
+                            <h3 class="product-name">Румсет часы Hayward HT-LS003</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 16 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Cam">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">524 800 сум/мес</span>
+                                <span class="old-price">793 000 сум</span>
+                            </div>
+                            <h3 class="product-name">PTZ камера Tentec TEVO-NV4K Ultra HD</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 17 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300" alt="Camera">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">14 008 000 сум/мес</span>
+                                <span class="old-price">124 456 сум</span>
+                            </div>
+                            <h3 class="product-name">PTZ камера Tentec TEVO-NV4K Ultra HD</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 18 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300" alt="Mac">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">15 600 000 сум/мес</span>
+                                <span class="old-price">17 100 300 сум</span>
+                            </div>
+                            <h3 class="product-name">iMac 26' i7 processor/ 8Gb SSD 256Gb</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 19 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300" alt="Laptop">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">13 487 000 сум/мес</span>
+                                <span class="old-price">13 853 500 сум</span>
+                            </div>
+                            <h3 class="product-name">Ноутбук ASUS ZenBook UX434F i7-10510U</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 20 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300" alt="Tablet">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">2 087 000 сум/мес</span>
+                                <span class="old-price">2 251 300 сум</span>
+                            </div>
+                            <h3 class="product-name">Планшет BD 10.4L Exlion-Pro 5/32GB Black 10.3"</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 21 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300" alt="Phone">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">1 529 000 сум/мес</span>
+                                <span class="old-price">2 150 900 сум</span>
+                            </div>
+                            <h3 class="product-name">Телефон TECNO Spark 6 Go KE5 2/64Gb Ice Jadeite</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 22 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Phone 2">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">16 000 000 сум/мес</span>
+                                <span class="old-price">569 900 сум</span>
+                            </div>
+                            <h3 class="product-name">Телефон TECNO POP 4 BC2s 2/32GB Ocean Blue</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+<!-- 
+                        <!-- Product Item 23 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=300" alt="Server">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">18 000 000 сум/мес</span>
+                                <span class="old-price">523 500 сум</span>
+                            </div>
+                            <h3 class="product-name">Румсет часы Hayward HT-LS003</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div> -->
+
+                        <!-- Product Item 24 -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Cam">
+                            </div>
+                            <div class="product-price-box">
+                                <span class="current-price">524 800 сум/мес</span>
+                                <span class="old-price">793 000 сум</span>
+                            </div>
+                            <h3 class="product-name">PTZ камера Tentec TEVO-NV4K Ultra HD</h3>
+                            <div class="product-actions">
+                                <button title="Сравнить"><i class="fa-solid fa-scale-balanced"></i></button>
+                                <button title="Избранное"><i class="fa-regular fa-heart"></i></button>
+                                <button title="В корзину"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination-area">
+                        <button class="more-btn">Показать еще</button>
+                        <div class="pagination-numbers">
+                            <span class="page-num active">1</span>
+                            <span class="page-num">2</span>
+                            <span class="page-num">3</span>
+                            <span class="page-num">4</span>
+                            <span class="page-dots">...</span>
+                            <span class="page-num">27</span>
+                            <span class="page-num">28</span>
+                            <button class="page-next"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="popular-section">
+                <h2>Популярные категории и модели</h2>
+                <div class="tag-list">
+                    <span class="tag">Redmi</span>
+                    <span class="tag">iPhone 14</span>
+                    <span class="tag">IP 13 Pro Max</span>
+                    <span class="tag">Redmi Note 10 Pro</span>
+                    <span class="tag">Redmi Note 10s</span>
+                    <span class="tag">Poco X3 Pro</span>
+                    <span class="tag">Смартфоны Samsung</span>
+                    <span class="tag">Наушники</span>
+                    <span class="tag">Mi Band</span>
+                </div>
+            </div>
+            <div class="seo-section">
+                <h2>Где купить надежный смартфон в Ташкенте?</h2>
+                <p>Современные смартфоны привлекают вниманием дизайном, функционалом. Производители ежегодно радуют пользователей новыми моделями. Так что купить "смартфон" — это не просто операция устройства, необходимость всегда оставаться на связи. Оправдают доступные гаджеты в интернет-магазинах выбирают доверять интернет-магазинам, удобно в каталоге, находя в один клик. Менюшка, чтобы сделать покупку, доставка до дверей курьером по всей Ташкенту. Оформляйте заказ на нашем интернет-портале прямо сейчас. Чтобы купить лучший смартфон и получить гарантию качества, доверяйте проверенным интернет-магазинам...</p>
+                <a href="#" class="seo-more">Показать больше <i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo">MIXELL<span>.UZ</span></a>
+                <div class="footer-contact-info">
+                    <p>График работы колл-центра:<br>Понедельник - Суббота 9:00 - 19:00</p>
+                    <p>Колл-центр:<br><strong>+998 71 203-00-99</strong></p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Категории</h4>
+                <ul>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Мобильные телефоны</a></li>
+                    <li><a href="#">Телефоны</a></li>
+                    <li><a href="#">Моноблоки</a></li>
+                    <li><a href="#">Медиаплееры</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Общее</h4>
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Наши магазины</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пуллитическая программа лояльности</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Покупателям</h4>
+                <ul>
+                    <li><a href="#">Помощь в рассылках</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Правила покупок с остонака</a></li>
+                    <li><a href="#">Возврат / Обмен</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
